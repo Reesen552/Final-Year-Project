@@ -11,7 +11,7 @@ def vid2pred():
 class Preprocess():
     def __init__(self, ratio=.7):
         self.ratio = ratio
-        data_folder = 'Final-Year-Project\data'
+        data_folder = 'data'
         labels = sorted(os.listdir(os.path.join(os.getcwd(), '{}/regime_videos'.format(data_folder))))
 
         video_list = []
