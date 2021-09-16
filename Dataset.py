@@ -48,7 +48,7 @@ class flowDataset(Dataset):
         img_tensor = img_tensor.permute(2, 0, 1)
         class_id = torch.tensor([class_id])
         
-        return img_tensor, class_id
+        return img_tensor.float(), class_id.float()
 
  
 if __name__ == '__main__':
