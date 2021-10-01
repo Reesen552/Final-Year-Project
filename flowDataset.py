@@ -37,7 +37,7 @@ class flowDataset(Dataset):
                 self.data.append([img_path, df.loc[file_name,'flow']])  # flow is the column name in the csv
         #print(self.data)
 
-        self.class_map = {'bubbly': 0, 'bubbly-slug':1, 'slug':2, 'slug-chrun':3, 'churn':4, 'churn-annular':5, 'annular':6}
+        self.class_map = {'bubbly': 0, 'bubbly-slug':1, 'slug':2, 'slug-churn':3, 'churn':4, 'churn-annular':5, 'annular':6}
 
         
 
