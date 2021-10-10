@@ -7,12 +7,13 @@ from torch.utils.data import Dataset, DataLoader
 import pandas as pd
 import torchvision
 from PIL import Image
+from collections import Counter
 
 
 class flowDataset(Dataset):
     """2 Phase FLow Dataset"""
 
-    def __init__(self,transform=None):
+    def __init__(self, val= False ,val_size = 0.2,transform=None):
         """
         Args:
             csv_file (string): Path to the csv file with annotations.
@@ -21,6 +22,8 @@ class flowDataset(Dataset):
                 on a sample.
         """
 
+        self.validation_set = val
+        self.val_size = val_size
         self.imgs_path = 'D:\Flow Videos\dataset'
         self.csv_path  = 'D:\Flow Videos\data_labels.csv'
         file_list = glob.glob(self.imgs_path + "*")
@@ -28,24 +31,59 @@ class flowDataset(Dataset):
 
         df = pd.read_csv(self.csv_path,index_col ="filename")
 
-        self.data = []
+        self.datapath = []  # stores each image path
+        self.label = [] # stores each label 
+
         self.transform = transform
 
         for class_path in file_list:
             for img_path in glob.glob(class_path+'/*.jpg'):
                 file_name = img_path.split("\\")[-1]
-                self.data.append([img_path, df.loc[file_name,'flow']])  # flow is the column name in the csv
+                label = df.loc[file_name,'flow']
+                self.label.append(label)
+                self.datapath.append(img_path)  # flow is the column name in the csv
         #print(self.data)
 
         self.class_map = {'bubbly': 0,'slug':1,'churn':2,'annular':3}
 
+        self.val = []
+        self.train = []
+
+        #Sort into test and train
+        for key in self.class_map:
+            
+            indices = [i for i, x in enumerate(self.label) if x == key]
+            split = int(np.floor(self.val_size * len(indices)))
+            train_indices, val_indices = indices[split:], indices[:split]
+
+            for i in train_indices:
+                new = [self.datapath[i],self.label[i]]
+                self.train.append( new)
+
+            for i in val_indices:
+                new = [self.datapath[i],self.label[i]]
+                self.val.append( new)
+
+
+
         
 
     def __len__(self):
-        return len(self.data)
+
+        if self.validation_set :
+            return len(  self.val)
+        else:
+            return len( self.train)
+
 
     def __getitem__(self, idx):
-        img_path, class_name = self.data[idx]
+
+        if self.validation_set :
+            img_path, class_name = self.val[idx]
+        else:
+            img_path, class_name = self.train[idx]
+
+        
         img = Image.open(img_path).convert("RGB")
 
         if self.transform is not None:
