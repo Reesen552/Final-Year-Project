@@ -1,0 +1,28 @@
+{
+    "os": "Windows-10-10.0.19043-SP0",
+    "python": "3.9.6",
+    "heartbeatAt": "2021-10-12T16:27:59.066216",
+    "startedAt": "2021-10-12T16:27:57.433728",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3060 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--ip=127.0.0.1",
+        "--stdin=9013",
+        "--control=9006",
+        "--hb=9005",
+        "--Session.signature_scheme=\"hmac-sha256\"",
+        "--Session.key=b\"a8ac9064-25e7-4037-887d-0d266a7d7e8e\"",
+        "--shell=9007",
+        "--transport=\"tcp\"",
+        "--iopub=9014",
+        "--f=C:\\Users\\reese\\AppData\\Local\\Temp\\tmp-57247biH9P8l1Sdt.json"
+    ],
+    "state": "running",
+    "program": "<python with no main file>",
+    "host": "DESKTOP-46CJ9TT",
+    "username": "reese",
+    "executable": "C:\\Users\\reese\\miniconda3\\envs\\final-year-project\\python.exe"
+}

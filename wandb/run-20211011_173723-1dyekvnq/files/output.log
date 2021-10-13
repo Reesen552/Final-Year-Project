@@ -1,0 +1,7 @@
+D:\Flow Videos\dataset\frame_507.jpg
+D:\Flow Videos\dataset\frame_1064.jpg
+D:\Flow Videos\dataset\frame_1516.jpg
+0.0935
+0.3858
+0.5872
+C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\torch\nn\functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)

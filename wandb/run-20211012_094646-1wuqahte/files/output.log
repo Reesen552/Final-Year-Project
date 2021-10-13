@@ -1,0 +1,79 @@
+Epoch 1/50
+----------
+C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\torch\nn\functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+train loss: 0.292867, acc: 0.0000
+validation loss: 0.228567, acc: 0.0000
+Epoch 2/50
+----------
+train loss: 0.227088, acc: 0.0000
+validation loss: 0.167184, acc: 0.0000
+Epoch 3/50
+----------
+train loss: 0.196868, acc: 0.0000
+validation loss: 0.111361, acc: 0.0000
+Epoch 4/50
+----------
+train loss: 0.167751, acc: 0.0000
+validation loss: 0.110328, acc: 0.0000
+Epoch 5/50
+----------
+train loss: 0.161055, acc: 0.0000
+validation loss: 0.099041, acc: 0.0000
+Epoch 6/50
+----------
+train loss: 0.159659, acc: 0.0000
+validation loss: 0.113345, acc: 0.0000
+Epoch 7/50
+----------
+train loss: 0.159395, acc: 0.0000
+validation loss: 0.108358, acc: 0.0000
+Epoch 8/50
+----------
+train loss: 0.150048, acc: 0.0000
+validation loss: 0.100019, acc: 0.0000
+Epoch 9/50
+----------
+train loss: 0.151067, acc: 0.0000
+validation loss: 0.115566, acc: 0.0000
+Epoch 10/50
+----------
+train loss: 0.150705, acc: 0.0000
+validation loss: 0.203572, acc: 0.0000
+Epoch 11/50
+----------
+train loss: 0.151314, acc: 0.0000
+validation loss: 0.100245, acc: 0.0000
+Epoch 12/50
+----------
+train loss: 0.146906, acc: 0.0000
+validation loss: 0.099160, acc: 0.0000
+Epoch 13/50
+----------
+train loss: 0.145545, acc: 0.0000
+validation loss: 0.104567, acc: 0.0000
+Epoch 14/50
+----------
+train loss: 0.148465, acc: 0.0000
+validation loss: 0.097638, acc: 0.0000
+Epoch 15/50
+----------
+train loss: 0.136205, acc: 0.0000
+validation loss: 0.145145, acc: 0.0000
+Epoch 16/50
+----------
+train loss: 0.142972, acc: 0.0000
+validation loss: 0.097526, acc: 0.0000
+Epoch 17/50
+----------
+train loss: 0.137564, acc: 0.0000
+validation loss: 0.113980, acc: 0.0000
+Epoch 18/50
+----------
+train loss: 0.135255, acc: 0.0000
+validation loss: 0.123000, acc: 0.0000
+Epoch 19/50
+----------
+train loss: 0.134677, acc: 0.0000
+validation loss: 0.096408, acc: 0.0000
+Epoch 20/50

@@ -1,0 +1,60 @@
+Epoch 1/50
+----------
+C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\torch\nn\functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+train loss: 0.359169, acc: 0.0000
+validation loss: 0.281824, acc: 0.0000
+Epoch 2/50
+----------
+train loss: 0.265097, acc: 0.0000
+validation loss: 0.295013, acc: 0.0000
+Epoch 3/50
+----------
+train loss: 0.248155, acc: 0.0000
+validation loss: 0.240050, acc: 0.0000
+Epoch 4/50
+----------
+train loss: 0.240327, acc: 0.0000
+validation loss: 0.227889, acc: 0.0000
+Epoch 5/50
+----------
+train loss: 0.239541, acc: 0.0000
+validation loss: 0.240551, acc: 0.0000
+Epoch 6/50
+----------
+train loss: 0.234530, acc: 0.0000
+validation loss: 0.223311, acc: 0.0000
+Epoch 7/50
+----------
+train loss: 0.231447, acc: 0.0000
+validation loss: 0.214401, acc: 0.0000
+Epoch 8/50
+----------
+train loss: 0.233757, acc: 0.0000
+validation loss: 0.210153, acc: 0.0000
+Epoch 9/50
+----------
+train loss: 0.215675, acc: 0.0000
+validation loss: 0.181751, acc: 0.0000
+Epoch 10/50
+----------
+train loss: 0.220934, acc: 0.0000
+validation loss: 0.257031, acc: 0.0000
+Epoch 11/50
+----------
+train loss: 0.206189, acc: 0.0000
+validation loss: 0.192849, acc: 0.0000
+Epoch 12/50
+----------
+train loss: 0.190428, acc: 0.0000
+validation loss: 0.146652, acc: 0.0000
+Epoch 13/50
+----------
+train loss: 0.193183, acc: 0.0000
+validation loss: 0.189969, acc: 0.0000
+Epoch 14/50
+----------
+train loss: 0.222430, acc: 0.0000
+validation loss: 0.196643, acc: 0.0000
+Epoch 15/50
+----------

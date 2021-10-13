@@ -1,0 +1,74 @@
+2021-10-11 17:37:28,697 INFO    MainThread:7016 [internal.py:wandb_internal():86] W&B internal server running at pid: 7016, started at: 2021-10-11 17:37:28.689270
+2021-10-11 17:37:28,699 INFO    WriterThread:7016 [datastore.py:open_for_write():77] open: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\run-1dyekvnq.wandb
+2021-10-11 17:37:28,699 DEBUG   HandlerThread:7016 [handler.py:handle_request():126] handle_request: check_version
+2021-10-11 17:37:28,702 DEBUG   SenderThread:7016 [sender.py:send():182] send: header
+2021-10-11 17:37:28,702 DEBUG   SenderThread:7016 [sender.py:send_request():196] send_request: check_version
+2021-10-11 17:37:28,823 DEBUG   SenderThread:7016 [sender.py:send():182] send: run
+2021-10-11 17:37:29,201 INFO    SenderThread:7016 [dir_watcher.py:__init__():169] watching files in: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files
+2021-10-11 17:37:29,201 INFO    SenderThread:7016 [sender.py:_start_run_threads():740] run started: 1dyekvnq with start time 1633966647
+2021-10-11 17:37:29,201 DEBUG   SenderThread:7016 [sender.py:send():182] send: summary
+2021-10-11 17:37:29,201 DEBUG   HandlerThread:7016 [handler.py:handle_request():126] handle_request: run_start
+2021-10-11 17:37:29,202 INFO    SenderThread:7016 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 17:37:29,215 DEBUG   HandlerThread:7016 [meta.py:__init__():40] meta init
+2021-10-11 17:37:29,215 DEBUG   HandlerThread:7016 [meta.py:__init__():54] meta init done
+2021-10-11 17:37:29,215 DEBUG   HandlerThread:7016 [meta.py:probe():211] probe
+2021-10-11 17:37:29,223 DEBUG   HandlerThread:7016 [meta.py:_save_pip():58] save pip
+2021-10-11 17:37:29,224 DEBUG   HandlerThread:7016 [meta.py:_save_pip():72] save pip done
+2021-10-11 17:37:29,224 DEBUG   HandlerThread:7016 [meta.py:_save_conda():79] save conda
+2021-10-11 17:37:29,227 ERROR   HandlerThread:7016 [meta.py:_save_conda():86] Error saving conda packages
+Traceback (most recent call last):
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\wandb\sdk\internal\meta.py", line 84, in _save_conda
+    subprocess.call(["conda", "env", "export"], stdout=f)
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2021-10-11 17:37:29,229 DEBUG   HandlerThread:7016 [meta.py:_save_conda():87] save conda done
+2021-10-11 17:37:29,229 DEBUG   HandlerThread:7016 [meta.py:probe():249] probe done
+2021-10-11 17:37:29,255 DEBUG   SenderThread:7016 [sender.py:send():182] send: files
+2021-10-11 17:37:29,256 INFO    SenderThread:7016 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-10-11 17:37:29,269 DEBUG   HandlerThread:7016 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 17:37:29,269 DEBUG   SenderThread:7016 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 17:37:30,213 INFO    Thread-8  :7016 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\requirements.txt
+2021-10-11 17:37:30,214 INFO    Thread-8  :7016 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\output.log
+2021-10-11 17:37:30,214 INFO    Thread-8  :7016 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\conda-environment.yaml
+2021-10-11 17:37:30,215 INFO    Thread-8  :7016 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\wandb-summary.json
+2021-10-11 17:37:30,215 INFO    Thread-8  :7016 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\wandb-metadata.json
+2021-10-11 17:37:30,295 INFO    Thread-11 :7016 [upload_job.py:push():137] Uploaded file C:\Users\reese\AppData\Local\Temp\tmp6h7zu8s0wandb\19fmv0ot-wandb-metadata.json
+2021-10-11 17:37:44,617 DEBUG   HandlerThread:7016 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 17:37:44,617 DEBUG   SenderThread:7016 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 17:37:48,343 INFO    Thread-8  :7016 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\output.log
+2021-10-11 17:37:52,370 INFO    Thread-8  :7016 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\output.log
+2021-10-11 17:37:59,978 DEBUG   HandlerThread:7016 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 17:37:59,978 DEBUG   SenderThread:7016 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 17:38:01,076 DEBUG   SenderThread:7016 [sender.py:send():182] send: stats
+2021-10-11 17:38:15,329 DEBUG   HandlerThread:7016 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 17:38:15,329 DEBUG   SenderThread:7016 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 17:38:30,679 DEBUG   HandlerThread:7016 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 17:38:30,679 DEBUG   SenderThread:7016 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 17:38:35,011 DEBUG   SenderThread:7016 [sender.py:send():182] send: stats
+2021-10-11 17:38:46,029 DEBUG   HandlerThread:7016 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 17:38:46,029 DEBUG   SenderThread:7016 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 17:38:58,345 WARNING MainThread:7016 [internal.py:is_dead():364] Internal process exiting, parent pid 17104 disappeared
+2021-10-11 17:38:58,345 ERROR   MainThread:7016 [internal.py:wandb_internal():141] Internal process shutdown.
+2021-10-11 17:38:58,432 INFO    SenderThread:7016 [sender.py:finish():979] shutting down sender
+2021-10-11 17:38:58,432 INFO    HandlerThread:7016 [handler.py:finish():683] shutting down handler
+2021-10-11 17:38:58,432 INFO    SenderThread:7016 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-11 17:38:58,832 INFO    SenderThread:7016 [dir_watcher.py:finish():313] scan: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files
+2021-10-11 17:38:58,833 INFO    SenderThread:7016 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\conda-environment.yaml conda-environment.yaml
+2021-10-11 17:38:58,833 INFO    SenderThread:7016 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\config.yaml config.yaml
+2021-10-11 17:38:58,834 INFO    SenderThread:7016 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\output.log output.log
+2021-10-11 17:38:58,834 INFO    SenderThread:7016 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\requirements.txt requirements.txt
+2021-10-11 17:38:58,838 INFO    SenderThread:7016 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\wandb-metadata.json wandb-metadata.json
+2021-10-11 17:38:58,841 INFO    SenderThread:7016 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\wandb-summary.json wandb-summary.json
+2021-10-11 17:38:58,845 INFO    SenderThread:7016 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-11 17:38:58,846 INFO    SenderThread:7016 [file_pusher.py:join():182] waiting for file pusher
+2021-10-11 17:38:59,217 INFO    WriterThread:7016 [datastore.py:close():281] close: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\run-1dyekvnq.wandb
+2021-10-11 17:38:59,866 INFO    Thread-15 :7016 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\wandb-summary.json
+2021-10-11 17:38:59,867 INFO    Thread-12 :7016 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\config.yaml
+2021-10-11 17:38:59,937 INFO    Thread-13 :7016 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\output.log
+2021-10-11 17:39:00,086 INFO    Thread-14 :7016 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_173723-1dyekvnq\files\requirements.txt
+2021-10-11 17:39:00,677 INFO    MainThread:7016 [internal.py:handle_exit():76] Internal process exited

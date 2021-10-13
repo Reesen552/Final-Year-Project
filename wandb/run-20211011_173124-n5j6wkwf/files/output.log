@@ -1,0 +1,19 @@
+D:\Flow Videos\dataset\frame_972.jpg
+D:\Flow Videos\dataset\frame_171.jpg
+D:\Flow Videos\dataset\frame_1273.jpg
+0.3662
+0.2312
+0.5006
+C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\torch\nn\functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+D:\Flow Videos\dataset\frame_972.jpg
+D:\Flow Videos\dataset\frame_171.jpg
+D:\Flow Videos\dataset\frame_1273.jpg
+0.3662
+0.2312
+0.5006
+D:\Flow Videos\dataset\frame_505.jpg
+D:\Flow Videos\dataset\frame_171.jpg
+D:\Flow Videos\dataset\frame_1273.jpg
+0.0935
+0.2312

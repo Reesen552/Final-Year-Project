@@ -1,0 +1,417 @@
+Epoch 1/100
+----------
+C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\torch\nn\functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+train loss: 0.170838
+validation loss: 0.132957
+Epoch 2/100
+----------
+train loss: 0.126290
+validation loss: 0.113093
+Epoch 3/100
+----------
+train loss: 0.117491
+validation loss: 0.106312
+Epoch 4/100
+----------
+train loss: 0.111367
+validation loss: 0.099353
+Epoch 5/100
+----------
+train loss: 0.105149
+validation loss: 0.091815
+Epoch 6/100
+----------
+train loss: 0.100416
+validation loss: 0.087102
+Epoch 7/100
+----------
+train loss: 0.097332
+validation loss: 0.082557
+Epoch 8/100
+----------
+train loss: 0.093067
+validation loss: 0.078598
+Epoch 9/100
+----------
+train loss: 0.090124
+validation loss: 0.074728
+Epoch 10/100
+----------
+train loss: 0.088014
+validation loss: 0.071709
+Epoch 11/100
+----------
+train loss: 0.086632
+validation loss: 0.069663
+Epoch 12/100
+----------
+train loss: 0.084952
+validation loss: 0.069455
+Epoch 13/100
+----------
+train loss: 0.083203
+validation loss: 0.064777
+Epoch 14/100
+----------
+train loss: 0.081022
+validation loss: 0.065767
+Epoch 15/100
+----------
+train loss: 0.079922
+validation loss: 0.063346
+Epoch 16/100
+----------
+train loss: 0.079121
+validation loss: 0.062759
+Epoch 17/100
+----------
+train loss: 0.077809
+validation loss: 0.060172
+Epoch 18/100
+----------
+train loss: 0.076905
+validation loss: 0.059850
+Epoch 19/100
+----------
+train loss: 0.075060
+validation loss: 0.057889
+Epoch 20/100
+----------
+train loss: 0.075381
+validation loss: 0.056502
+Epoch 21/100
+----------
+train loss: 0.075257
+validation loss: 0.055393
+Epoch 22/100
+----------
+train loss: 0.073992
+validation loss: 0.054226
+Epoch 23/100
+----------
+train loss: 0.074094
+validation loss: 0.053572
+Epoch 24/100
+----------
+train loss: 0.070454
+validation loss: 0.052145
+Epoch 25/100
+----------
+train loss: 0.072993
+validation loss: 0.055516
+Epoch 26/100
+----------
+train loss: 0.070666
+validation loss: 0.053854
+Epoch 27/100
+----------
+train loss: 0.069987
+validation loss: 0.053560
+Epoch 28/100
+----------
+train loss: 0.070413
+validation loss: 0.051811
+Epoch 29/100
+----------
+train loss: 0.067420
+validation loss: 0.049027
+Epoch 30/100
+----------
+train loss: 0.069554
+validation loss: 0.049320
+Epoch 31/100
+----------
+train loss: 0.067271
+validation loss: 0.051802
+Epoch 32/100
+----------
+train loss: 0.068790
+validation loss: 0.055844
+Epoch 33/100
+----------
+train loss: 0.067473
+validation loss: 0.054555
+Epoch 34/100
+----------
+train loss: 0.068540
+validation loss: 0.047066
+Epoch 35/100
+----------
+train loss: 0.066776
+validation loss: 0.051882
+Epoch 36/100
+----------
+train loss: 0.064665
+validation loss: 0.046735
+Epoch 37/100
+----------
+train loss: 0.066269
+validation loss: 0.047601
+Epoch 38/100
+----------
+train loss: 0.067051
+validation loss: 0.045279
+Epoch 39/100
+----------
+train loss: 0.064271
+validation loss: 0.051761
+Epoch 40/100
+----------
+train loss: 0.064106
+validation loss: 0.044876
+Epoch 41/100
+----------
+train loss: 0.063347
+validation loss: 0.051640
+Epoch 42/100
+----------
+train loss: 0.062285
+validation loss: 0.046385
+Epoch 43/100
+----------
+train loss: 0.063247
+validation loss: 0.045382
+Epoch 44/100
+----------
+train loss: 0.062041
+validation loss: 0.046362
+Epoch 45/100
+----------
+train loss: 0.064269
+validation loss: 0.044171
+Epoch 46/100
+----------
+train loss: 0.061171
+validation loss: 0.042822
+Epoch 47/100
+----------
+train loss: 0.061795
+validation loss: 0.046171
+Epoch 48/100
+----------
+train loss: 0.062015
+validation loss: 0.045451
+Epoch 49/100
+----------
+train loss: 0.061560
+validation loss: 0.045897
+Epoch 50/100
+----------
+train loss: 0.060942
+validation loss: 0.044644
+Epoch 51/100
+----------
+train loss: 0.061801
+validation loss: 0.042318
+Epoch 52/100
+----------
+train loss: 0.061631
+validation loss: 0.042870
+Epoch 53/100
+----------
+train loss: 0.062424
+validation loss: 0.042946
+Epoch 54/100
+----------
+train loss: 0.060414
+validation loss: 0.042331
+Epoch 55/100
+----------
+train loss: 0.061754
+validation loss: 0.044849
+Epoch 56/100
+----------
+train loss: 0.060045
+validation loss: 0.046089
+Epoch 57/100
+----------
+train loss: 0.059884
+validation loss: 0.045881
+Epoch 58/100
+----------
+train loss: 0.059578
+validation loss: 0.041904
+Epoch 59/100
+----------
+train loss: 0.060750
+validation loss: 0.039855
+Epoch 60/100
+----------
+train loss: 0.058959
+validation loss: 0.042784
+Epoch 61/100
+----------
+train loss: 0.060236
+validation loss: 0.046109
+Epoch 62/100
+----------
+train loss: 0.060208
+validation loss: 0.040409
+Epoch 63/100
+----------
+train loss: 0.058612
+validation loss: 0.040212
+Epoch 64/100
+----------
+train loss: 0.058153
+validation loss: 0.041497
+Epoch 65/100
+----------
+train loss: 0.058386
+validation loss: 0.044095
+Epoch 66/100
+----------
+train loss: 0.058685
+validation loss: 0.042036
+Epoch 67/100
+----------
+train loss: 0.059377
+validation loss: 0.040079
+Epoch 68/100
+----------
+train loss: 0.056330
+validation loss: 0.040714
+Epoch 69/100
+----------
+train loss: 0.058751
+validation loss: 0.039687
+Epoch 70/100
+----------
+train loss: 0.057688
+validation loss: 0.038828
+Epoch 71/100
+----------
+train loss: 0.057273
+validation loss: 0.044052
+Epoch 72/100
+----------
+train loss: 0.059125
+validation loss: 0.039939
+Epoch 73/100
+----------
+train loss: 0.057981
+validation loss: 0.041717
+Epoch 74/100
+----------
+train loss: 0.056518
+validation loss: 0.043847
+Epoch 75/100
+----------
+train loss: 0.058252
+validation loss: 0.037431
+Epoch 76/100
+----------
+train loss: 0.056431
+validation loss: 0.040100
+Epoch 77/100
+----------
+train loss: 0.056610
+validation loss: 0.040751
+Epoch 78/100
+----------
+train loss: 0.057175
+validation loss: 0.037568
+Epoch 79/100
+----------
+train loss: 0.056502
+validation loss: 0.044568
+Epoch 80/100
+----------
+train loss: 0.055559
+validation loss: 0.044420
+Epoch 81/100
+----------
+train loss: 0.057176
+validation loss: 0.039700
+Epoch 82/100
+----------
+train loss: 0.055795
+validation loss: 0.039788
+Epoch 83/100
+----------
+train loss: 0.057796
+validation loss: 0.050124
+Epoch 84/100
+----------
+train loss: 0.055798
+validation loss: 0.038676
+Epoch 85/100
+----------
+train loss: 0.056000
+validation loss: 0.036958
+Epoch 86/100
+----------
+train loss: 0.055685
+validation loss: 0.037392
+Epoch 87/100
+----------
+train loss: 0.056505
+validation loss: 0.040073
+Epoch 88/100
+----------
+train loss: 0.055079
+validation loss: 0.041550
+Epoch 89/100
+----------
+train loss: 0.056642
+validation loss: 0.040579
+Epoch 90/100
+----------
+train loss: 0.056502
+validation loss: 0.040940
+Epoch 91/100
+----------
+train loss: 0.053870
+validation loss: 0.039606
+Epoch 92/100
+----------
+train loss: 0.053839
+validation loss: 0.038243
+Epoch 93/100
+----------
+train loss: 0.053922
+validation loss: 0.039034
+Epoch 94/100
+----------
+train loss: 0.054340
+validation loss: 0.038683
+Epoch 95/100
+----------
+train loss: 0.054727
+validation loss: 0.041847
+Epoch 96/100
+----------
+train loss: 0.055406
+validation loss: 0.036015
+Epoch 97/100
+----------
+train loss: 0.054175
+validation loss: 0.035728
+Epoch 98/100
+----------
+train loss: 0.055162
+validation loss: 0.036678
+Epoch 99/100
+----------
+train loss: 0.054444
+validation loss: 0.040154
+Epoch 100/100
+----------
+train loss: 0.054397
+validation loss: 0.038006
+D:\Flow Videos\dataset\frame_1062.jpg
+D:\Flow Videos\dataset\frame_653.jpg
+D:\Flow Videos\dataset1\frame_740.jpg
+0.0935
+0.0311
+0.0106
+D:\Flow Videos\dataset\frame_1062.jpg
+D:\Flow Videos\dataset\frame_653.jpg
+D:\Flow Videos\dataset1\frame_740.jpg
+D:\Flow Videos\dataset\frame_1385.jpg
+D:\Flow Videos\dataset\frame_610.jpg
+0.0935
+0.0311
+-0.0072
+0.3099

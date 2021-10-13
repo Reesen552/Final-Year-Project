@@ -1,0 +1,572 @@
+2021-10-11 16:36:39,556 INFO    MainThread:15828 [internal.py:wandb_internal():86] W&B internal server running at pid: 15828, started at: 2021-10-11 16:36:39.548991
+2021-10-11 16:36:39,557 INFO    WriterThread:15828 [datastore.py:open_for_write():77] open: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\run-a364id76.wandb
+2021-10-11 16:36:39,559 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: check_version
+2021-10-11 16:36:39,562 DEBUG   SenderThread:15828 [sender.py:send():182] send: header
+2021-10-11 16:36:39,562 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: check_version
+2021-10-11 16:36:39,718 DEBUG   SenderThread:15828 [sender.py:send():182] send: run
+2021-10-11 16:36:40,098 INFO    SenderThread:15828 [dir_watcher.py:__init__():169] watching files in: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files
+2021-10-11 16:36:40,098 INFO    SenderThread:15828 [sender.py:_start_run_threads():740] run started: a364id76 with start time 1633962998
+2021-10-11 16:36:40,098 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:36:40,099 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:36:40,099 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: run_start
+2021-10-11 16:36:40,113 DEBUG   HandlerThread:15828 [meta.py:__init__():40] meta init
+2021-10-11 16:36:40,114 DEBUG   HandlerThread:15828 [meta.py:__init__():54] meta init done
+2021-10-11 16:36:40,114 DEBUG   HandlerThread:15828 [meta.py:probe():211] probe
+2021-10-11 16:36:40,121 DEBUG   HandlerThread:15828 [meta.py:_save_pip():58] save pip
+2021-10-11 16:36:40,122 DEBUG   HandlerThread:15828 [meta.py:_save_pip():72] save pip done
+2021-10-11 16:36:40,123 DEBUG   HandlerThread:15828 [meta.py:_save_conda():79] save conda
+2021-10-11 16:36:40,127 ERROR   HandlerThread:15828 [meta.py:_save_conda():86] Error saving conda packages
+Traceback (most recent call last):
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\wandb\sdk\internal\meta.py", line 84, in _save_conda
+    subprocess.call(["conda", "env", "export"], stdout=f)
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2021-10-11 16:36:40,149 DEBUG   HandlerThread:15828 [meta.py:_save_conda():87] save conda done
+2021-10-11 16:36:40,149 DEBUG   HandlerThread:15828 [meta.py:probe():249] probe done
+2021-10-11 16:36:40,170 DEBUG   SenderThread:15828 [sender.py:send():182] send: files
+2021-10-11 16:36:40,170 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-10-11 16:36:40,178 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:36:40,179 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:36:40,191 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: pause
+2021-10-11 16:36:40,191 INFO    HandlerThread:15828 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-11 16:36:40,303 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: resume
+2021-10-11 16:36:40,303 INFO    HandlerThread:15828 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-11 16:36:40,303 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: pause
+2021-10-11 16:36:40,303 INFO    HandlerThread:15828 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-11 16:36:40,373 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: resume
+2021-10-11 16:36:40,373 INFO    HandlerThread:15828 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-11 16:36:40,374 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: pause
+2021-10-11 16:36:40,374 INFO    HandlerThread:15828 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-11 16:36:40,443 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: resume
+2021-10-11 16:36:40,443 INFO    HandlerThread:15828 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-11 16:36:40,444 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: pause
+2021-10-11 16:36:40,444 INFO    HandlerThread:15828 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-11 16:36:40,515 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: resume
+2021-10-11 16:36:40,515 INFO    HandlerThread:15828 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-11 16:36:40,516 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: pause
+2021-10-11 16:36:40,516 INFO    HandlerThread:15828 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-11 16:36:40,539 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:36:40,540 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:36:40,593 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:36:40,594 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: resume
+2021-10-11 16:36:40,594 INFO    HandlerThread:15828 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-11 16:36:40,594 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: pause
+2021-10-11 16:36:40,594 INFO    HandlerThread:15828 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-11 16:36:40,668 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:36:40,669 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: resume
+2021-10-11 16:36:40,669 INFO    HandlerThread:15828 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-11 16:36:40,670 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:36:40,670 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:36:41,115 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:36:41,115 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:36:41,115 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\requirements.txt
+2021-10-11 16:36:41,116 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-metadata.json
+2021-10-11 16:36:41,116 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\conda-environment.yaml
+2021-10-11 16:36:41,393 INFO    Thread-11 :15828 [upload_job.py:push():137] Uploaded file C:\Users\reese\AppData\Local\Temp\tmpbrkgexx0wandb\391jjepn-wandb-metadata.json
+2021-10-11 16:36:42,503 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: pause
+2021-10-11 16:36:42,503 INFO    HandlerThread:15828 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-11 16:36:42,629 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: resume
+2021-10-11 16:36:42,629 INFO    HandlerThread:15828 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-11 16:36:42,630 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: pause
+2021-10-11 16:36:42,630 INFO    HandlerThread:15828 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-11 16:36:42,692 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: resume
+2021-10-11 16:36:42,692 INFO    HandlerThread:15828 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-11 16:36:42,693 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: pause
+2021-10-11 16:36:42,693 INFO    HandlerThread:15828 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-11 16:36:42,760 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:36:42,761 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: resume
+2021-10-11 16:36:42,762 INFO    HandlerThread:15828 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-11 16:36:42,764 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:36:42,765 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:36:45,139 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:36:47,153 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:36:55,544 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:36:55,544 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:36:58,862 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:36:58,862 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:36:58,864 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:36:59,235 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:37:01,253 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:37:02,218 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:37:02,218 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:37:02,220 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:37:02,262 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:37:05,285 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:37:10,907 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:37:10,908 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:37:14,656 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:37:15,802 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:37:15,803 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:37:15,804 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:37:16,359 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:37:17,365 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:37:19,073 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:37:19,073 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:37:19,074 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:37:19,378 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:37:21,393 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:37:26,266 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:37:26,266 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:37:33,213 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:37:33,214 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:37:33,216 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:37:33,471 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:37:35,485 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:37:36,644 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:37:36,645 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:37:36,645 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:37:37,502 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:37:39,515 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:37:41,639 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:37:41,640 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:37:48,799 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:37:50,653 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:37:50,654 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:37:50,655 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:37:51,590 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:37:53,605 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:37:54,018 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:37:54,018 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:37:54,019 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:37:54,612 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:37:55,619 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:37:57,008 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:37:57,009 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:38:08,063 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:38:08,063 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:38:08,064 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:38:08,729 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:38:09,734 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:38:11,559 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:38:11,560 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:38:11,560 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:38:11,750 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:38:12,374 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:38:12,374 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:38:13,766 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:38:22,901 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:38:25,756 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:38:25,756 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:38:25,757 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:38:25,848 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:38:26,857 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:38:27,738 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:38:27,738 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:38:29,101 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:38:29,101 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:38:29,102 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:38:29,880 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:38:30,889 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:38:42,818 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:38:42,818 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:38:42,819 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:38:42,967 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:38:42,967 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:38:43,109 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:38:43,109 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:38:46,454 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:38:46,454 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:38:46,455 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:38:46,993 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:38:46,994 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:38:56,976 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:38:58,473 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:38:58,473 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:39:01,256 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:39:01,256 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:39:01,257 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:39:02,087 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:39:03,094 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:39:04,784 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:39:04,785 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:39:04,786 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:39:05,106 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:39:05,107 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:39:13,830 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:39:13,830 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:39:19,346 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:39:19,346 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:39:19,347 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:39:20,225 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:39:21,232 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:39:22,777 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:39:22,777 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:39:22,778 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:39:23,246 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:39:23,246 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:39:29,208 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:39:29,208 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:39:30,996 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:39:37,128 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:39:37,128 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:39:37,129 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:39:37,339 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:39:39,350 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:39:40,613 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:39:40,613 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:39:40,614 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:39:41,365 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:39:41,366 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:39:44,564 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:39:44,565 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:39:54,774 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:39:54,775 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:39:54,777 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:39:55,462 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:39:55,462 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:39:58,218 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:39:58,218 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:39:58,219 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:39:58,482 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:39:59,490 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:39:59,954 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:39:59,954 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:40:05,089 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:40:12,362 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:40:12,362 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:40:12,363 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:40:12,583 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:40:13,590 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:40:15,317 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:40:15,317 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:40:15,860 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:40:15,860 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:40:15,862 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:40:16,611 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:40:17,619 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:40:30,266 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:40:30,266 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:40:30,267 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:40:30,689 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:40:30,690 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:40:30,706 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:40:31,715 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:40:33,724 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:40:33,724 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:40:33,725 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:40:33,731 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:40:35,745 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:40:39,194 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:40:46,250 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:40:46,250 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:40:48,044 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:40:48,045 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:40:48,046 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:40:48,841 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:40:49,849 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:40:51,524 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:40:51,525 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:40:51,526 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:40:51,864 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:40:53,878 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:41:01,618 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:41:01,618 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:41:05,818 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:41:05,818 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:41:05,819 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:41:05,953 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:41:07,967 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:41:09,318 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:41:09,318 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:41:09,319 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:41:09,981 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:41:09,982 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:41:13,313 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:41:16,972 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:41:16,973 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:41:23,725 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:41:23,725 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:41:23,727 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:41:24,083 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:41:26,098 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:41:27,278 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:41:27,279 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:41:27,279 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:41:28,111 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:41:28,112 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:41:32,329 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:41:32,330 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:41:42,307 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:41:42,307 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:41:42,308 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:41:43,209 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:41:44,215 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:41:45,824 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:41:45,824 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:41:45,825 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:41:46,230 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:41:46,230 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:41:47,420 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:41:47,690 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:41:47,690 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:42:00,346 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:42:00,346 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:42:00,347 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:42:01,319 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:42:02,327 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:42:03,045 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:42:03,045 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:42:03,913 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:42:03,914 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:42:03,914 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:42:04,337 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:42:06,351 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:42:18,396 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:42:18,396 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:42:19,199 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:42:19,199 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:42:19,202 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:42:19,433 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:42:20,438 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:42:21,523 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:42:22,756 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:42:22,756 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:42:22,757 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:42:23,463 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:42:24,468 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:42:33,750 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:42:33,750 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:42:37,413 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:42:37,413 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:42:37,414 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:42:37,552 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:42:38,556 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:42:40,927 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:42:40,927 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:42:40,928 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:42:41,582 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:42:42,587 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:42:49,140 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:42:49,140 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:42:55,369 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:42:55,370 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:42:55,372 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:42:55,630 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:42:55,672 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:42:56,678 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:42:58,811 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:42:58,811 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:42:58,812 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:42:59,701 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:43:00,707 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:43:04,490 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:43:04,491 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:43:12,912 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:43:12,913 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:43:12,914 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:43:13,792 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:43:14,806 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:43:16,312 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:43:16,313 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:43:16,313 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:43:16,822 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:43:16,823 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:43:19,842 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:43:19,843 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:43:29,778 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:43:30,750 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:43:30,751 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:43:30,752 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:43:30,933 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:43:32,947 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:43:34,214 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:43:34,214 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:43:34,215 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:43:34,962 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:43:34,963 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:43:35,218 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:43:35,218 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:43:48,861 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:43:48,861 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:43:48,862 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:43:49,049 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:43:50,575 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:43:50,576 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:43:51,055 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:43:52,393 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:43:52,393 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:43:52,394 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:43:53,067 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:43:53,067 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:44:03,910 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:44:05,954 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:44:05,954 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:44:07,418 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:44:07,418 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:44:07,419 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:44:08,191 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:44:09,197 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:44:10,906 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:44:10,906 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:44:10,907 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:44:11,209 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:44:13,219 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:44:21,302 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:44:21,302 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:44:25,387 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:44:25,388 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:44:25,389 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:44:26,297 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:44:27,301 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:44:28,975 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:44:28,975 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:44:28,976 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:44:29,316 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:44:31,331 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:44:36,665 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:44:36,666 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:44:38,049 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:44:43,624 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:44:43,625 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:44:43,626 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:44:44,411 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:44:45,419 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:44:47,209 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:44:47,209 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:44:47,210 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:44:47,432 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:44:49,446 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:44:52,033 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:44:52,034 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:45:01,569 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:45:01,569 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:45:01,570 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:45:02,543 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:45:03,551 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:45:05,025 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:45:05,025 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:45:05,026 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:45:05,566 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:45:07,387 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:45:07,387 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:45:07,595 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:45:12,172 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:45:18,987 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:45:18,988 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:45:18,989 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:45:19,677 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:45:19,677 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:45:22,441 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:45:22,441 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:45:22,442 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:45:22,697 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:45:22,760 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:45:22,761 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:45:23,704 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:45:36,137 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:45:36,137 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:45:36,138 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:45:36,797 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:45:37,806 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:45:38,109 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:45:38,109 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:45:39,431 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:45:39,431 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:45:39,432 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:45:39,821 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:45:41,836 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:45:46,265 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:45:53,645 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:45:53,645 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:45:53,993 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:45:53,993 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:45:53,994 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:45:54,925 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:45:55,931 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:45:57,129 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:45:57,129 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:45:57,130 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:45:57,946 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:45:57,947 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:46:09,008 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:46:09,008 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:46:11,140 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:46:11,140 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:46:11,141 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:46:12,047 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:46:12,047 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:46:14,404 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:46:14,404 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:46:14,405 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:46:15,067 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:46:16,074 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:46:20,377 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:46:24,361 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:46:24,361 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:46:28,248 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:46:28,248 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:46:28,249 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:46:29,168 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:46:30,175 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:46:31,781 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:46:31,781 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:46:31,782 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:46:32,189 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:46:34,204 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:46:39,724 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:46:39,725 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:46:46,057 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:46:46,057 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:46:46,058 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:46:46,287 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:46:48,300 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:46:49,377 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:46:49,377 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:46:49,378 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:46:50,315 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:46:50,316 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:46:54,481 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:46:55,110 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:46:55,110 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:47:03,214 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:47:03,214 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:47:03,215 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:47:03,407 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:47:04,412 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:47:06,587 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:47:06,587 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:47:06,588 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:47:07,433 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:47:08,442 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:47:10,474 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:47:10,475 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:47:20,322 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:47:20,322 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:47:20,323 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:47:20,535 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:47:22,550 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:47:23,676 DEBUG   SenderThread:15828 [sender.py:send():182] send: history
+2021-10-11 16:47:23,677 DEBUG   SenderThread:15828 [sender.py:send():182] send: summary
+2021-10-11 16:47:23,678 INFO    SenderThread:15828 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-11 16:47:24,566 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:47:24,566 INFO    Thread-8  :15828 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:47:25,827 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 16:47:25,827 DEBUG   SenderThread:15828 [sender.py:send_request():196] send_request: stop_status
+2021-10-11 16:47:28,360 DEBUG   HandlerThread:15828 [handler.py:handle_request():126] handle_request: pause
+2021-10-11 16:47:28,361 INFO    HandlerThread:15828 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-11 16:47:28,440 DEBUG   SenderThread:15828 [sender.py:send():182] send: stats
+2021-10-11 16:47:33,033 WARNING MainThread:15828 [internal.py:is_dead():364] Internal process exiting, parent pid 14836 disappeared
+2021-10-11 16:47:33,033 ERROR   MainThread:15828 [internal.py:wandb_internal():141] Internal process shutdown.
+2021-10-11 16:47:33,314 INFO    SenderThread:15828 [sender.py:finish():979] shutting down sender
+2021-10-11 16:47:33,314 INFO    HandlerThread:15828 [handler.py:finish():683] shutting down handler
+2021-10-11 16:47:33,314 INFO    SenderThread:15828 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-11 16:47:33,474 INFO    WriterThread:15828 [datastore.py:close():281] close: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\run-a364id76.wandb
+2021-10-11 16:47:33,634 INFO    SenderThread:15828 [dir_watcher.py:finish():313] scan: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files
+2021-10-11 16:47:33,635 INFO    SenderThread:15828 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\conda-environment.yaml conda-environment.yaml
+2021-10-11 16:47:33,635 INFO    SenderThread:15828 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\config.yaml config.yaml
+2021-10-11 16:47:33,636 INFO    SenderThread:15828 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log output.log
+2021-10-11 16:47:33,636 INFO    SenderThread:15828 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\requirements.txt requirements.txt
+2021-10-11 16:47:33,642 INFO    SenderThread:15828 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-metadata.json wandb-metadata.json
+2021-10-11 16:47:33,642 INFO    SenderThread:15828 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json wandb-summary.json
+2021-10-11 16:47:33,646 INFO    SenderThread:15828 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-11 16:47:33,647 INFO    SenderThread:15828 [file_pusher.py:join():182] waiting for file pusher
+2021-10-11 16:47:34,670 INFO    Thread-21 :15828 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\config.yaml
+2021-10-11 16:47:34,705 INFO    Thread-24 :15828 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\wandb-summary.json
+2021-10-11 16:47:34,824 INFO    Thread-22 :15828 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\output.log
+2021-10-11 16:47:34,850 INFO    Thread-23 :15828 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211011_163638-a364id76\files\requirements.txt
+2021-10-11 16:47:35,484 INFO    MainThread:15828 [internal.py:handle_exit():76] Internal process exited

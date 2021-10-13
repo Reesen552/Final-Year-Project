@@ -1,0 +1,11 @@
+2021-10-13 13:04:23,950 INFO    MainThread:15948 [internal.py:wandb_internal():86] W&B internal server running at pid: 15948, started at: 2021-10-13 13:04:23.942115
+2021-10-13 13:04:23,952 INFO    WriterThread:15948 [datastore.py:open_for_write():77] open: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_130416-1ujlrmnv\run-1ujlrmnv.wandb
+2021-10-13 13:04:23,952 DEBUG   HandlerThread:15948 [handler.py:handle_request():126] handle_request: check_version
+2021-10-13 13:04:23,965 DEBUG   SenderThread:15948 [sender.py:send():182] send: header
+2021-10-13 13:04:23,965 DEBUG   SenderThread:15948 [sender.py:send_request():196] send_request: check_version
+2021-10-13 13:04:33,023 WARNING MainThread:15948 [internal.py:is_dead():364] Internal process exiting, parent pid 17624 disappeared
+2021-10-13 13:04:33,023 ERROR   MainThread:15948 [internal.py:wandb_internal():141] Internal process shutdown.
+2021-10-13 13:04:33,204 INFO    SenderThread:15948 [sender.py:finish():979] shutting down sender
+2021-10-13 13:04:34,017 INFO    WriterThread:15948 [datastore.py:close():281] close: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_130416-1ujlrmnv\run-1ujlrmnv.wandb
+2021-10-13 13:04:34,033 INFO    HandlerThread:15948 [handler.py:finish():683] shutting down handler
+2021-10-13 13:04:34,033 INFO    MainThread:15948 [internal.py:handle_exit():76] Internal process exited

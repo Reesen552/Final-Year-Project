@@ -1,0 +1,215 @@
+
+C:\Users\reese\miniconda3\envs\final-year-project\python.exe
+Epoch 1/50
+----------
+C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\torch\nn\functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+train loss: 0.643809, acc: 0.0000
+validation loss: 0.466965, acc: 0.0000
+Epoch 2/50
+----------
+train loss: 0.477735, acc: 0.0000
+validation loss: 0.352042, acc: 0.0000
+Epoch 3/50
+----------
+train loss: 0.451574, acc: 0.0000
+validation loss: 0.363005, acc: 0.0000
+Epoch 4/50
+----------
+train loss: 0.417849, acc: 0.0000
+validation loss: 0.326418, acc: 0.0000
+Epoch 5/50
+----------
+train loss: 0.444431, acc: 0.0000
+validation loss: 0.373698, acc: 0.0000
+Epoch 6/50
+----------
+train loss: 0.423433, acc: 0.0000
+validation loss: 0.341178, acc: 0.0000
+Epoch 7/50
+----------
+train loss: 0.392502, acc: 0.0000
+validation loss: 0.319993, acc: 0.0000
+Epoch 8/50
+----------
+train loss: 0.395260, acc: 0.0000
+validation loss: 0.383110, acc: 0.0000
+Epoch 9/50
+----------
+train loss: 0.354578, acc: 0.0000
+validation loss: 0.284419, acc: 0.0000
+Epoch 10/50
+----------
+train loss: 0.336465, acc: 0.0000
+validation loss: 0.265298, acc: 0.0000
+Epoch 11/50
+----------
+train loss: 0.351533, acc: 0.0000
+validation loss: 0.262042, acc: 0.0000
+Epoch 12/50
+----------
+train loss: 0.337895, acc: 0.0000
+validation loss: 0.302301, acc: 0.0000
+Epoch 13/50
+----------
+train loss: 0.374273, acc: 0.0000
+validation loss: 0.347998, acc: 0.0000
+Epoch 14/50
+----------
+train loss: 0.326707, acc: 0.0000
+validation loss: 0.366741, acc: 0.0000
+Epoch 15/50
+----------
+train loss: 0.332001, acc: 0.0000
+validation loss: 0.396006, acc: 0.0000
+Epoch 16/50
+----------
+train loss: 0.335487, acc: 0.0000
+validation loss: 0.246116, acc: 0.0000
+Epoch 17/50
+----------
+train loss: 0.340869, acc: 0.0000
+validation loss: 0.278744, acc: 0.0000
+Epoch 18/50
+----------
+train loss: 0.318030, acc: 0.0000
+validation loss: 0.247547, acc: 0.0000
+Epoch 19/50
+----------
+train loss: 0.310823, acc: 0.0000
+validation loss: 0.248081, acc: 0.0000
+Epoch 20/50
+----------
+train loss: 0.317167, acc: 0.0000
+validation loss: 0.240942, acc: 0.0000
+Epoch 21/50
+----------
+train loss: 0.290868, acc: 0.0000
+validation loss: 0.259598, acc: 0.0000
+Epoch 22/50
+----------
+train loss: 0.330133, acc: 0.0000
+validation loss: 0.252822, acc: 0.0000
+Epoch 23/50
+----------
+train loss: 0.301551, acc: 0.0000
+validation loss: 0.412929, acc: 0.0000
+Epoch 24/50
+----------
+train loss: 0.313210, acc: 0.0000
+validation loss: 0.262395, acc: 0.0000
+Epoch 25/50
+----------
+train loss: 0.296888, acc: 0.0000
+validation loss: 0.226663, acc: 0.0000
+Epoch 26/50
+----------
+train loss: 0.306115, acc: 0.0000
+validation loss: 0.246273, acc: 0.0000
+Epoch 27/50
+----------
+train loss: 0.310524, acc: 0.0000
+validation loss: 0.323069, acc: 0.0000
+Epoch 28/50
+----------
+train loss: 0.295087, acc: 0.0000
+validation loss: 0.234468, acc: 0.0000
+Epoch 29/50
+----------
+train loss: 0.301539, acc: 0.0000
+validation loss: 0.273567, acc: 0.0000
+Epoch 30/50
+----------
+train loss: 0.303398, acc: 0.0000
+validation loss: 0.228566, acc: 0.0000
+Epoch 31/50
+----------
+train loss: 0.312455, acc: 0.0000
+validation loss: 0.230255, acc: 0.0000
+Epoch 32/50
+----------
+train loss: 0.283830, acc: 0.0000
+validation loss: 0.288056, acc: 0.0000
+Epoch 33/50
+----------
+train loss: 0.295395, acc: 0.0000
+validation loss: 0.243295, acc: 0.0000
+Epoch 34/50
+----------
+train loss: 0.288008, acc: 0.0000
+validation loss: 0.232765, acc: 0.0000
+Epoch 35/50
+----------
+train loss: 0.278301, acc: 0.0000
+validation loss: 0.306728, acc: 0.0000
+Epoch 36/50
+----------
+train loss: 0.281129, acc: 0.0000
+validation loss: 0.211187, acc: 0.0000
+Epoch 37/50
+----------
+train loss: 0.306410, acc: 0.0000
+validation loss: 0.220386, acc: 0.0000
+Epoch 38/50
+----------
+train loss: 0.297982, acc: 0.0000
+validation loss: 0.275349, acc: 0.0000
+Epoch 39/50
+----------
+train loss: 0.286441, acc: 0.0000
+validation loss: 0.224084, acc: 0.0000
+Epoch 40/50
+----------
+train loss: 0.304726, acc: 0.0000
+validation loss: 0.264403, acc: 0.0000
+Epoch 41/50
+----------
+train loss: 0.257282, acc: 0.0000
+validation loss: 0.200981, acc: 0.0000
+Epoch 42/50
+----------
+train loss: 0.284865, acc: 0.0000
+validation loss: 0.230968, acc: 0.0000
+Epoch 43/50
+----------
+train loss: 0.290016, acc: 0.0000
+validation loss: 0.209670, acc: 0.0000
+Epoch 44/50
+----------
+train loss: 0.263343, acc: 0.0000
+validation loss: 0.197650, acc: 0.0000
+Epoch 45/50
+----------
+train loss: 0.282284, acc: 0.0000
+validation loss: 0.215193, acc: 0.0000
+Epoch 46/50
+----------
+train loss: 0.261229, acc: 0.0000
+validation loss: 0.236674, acc: 0.0000
+Epoch 47/50
+----------
+train loss: 0.280644, acc: 0.0000
+validation loss: 0.198759, acc: 0.0000
+Epoch 48/50
+----------
+train loss: 0.294117, acc: 0.0000
+validation loss: 0.207984, acc: 0.0000
+Epoch 49/50
+----------
+train loss: 0.275306, acc: 0.0000
+validation loss: 0.240595, acc: 0.0000
+Epoch 50/50
+----------
+train loss: 0.271207, acc: 0.0000
+validation loss: 0.207874, acc: 0.0000
+D:\Flow Videos\dataset\frame_2446.jpg
+D:\Flow Videos\dataset\frame_2592.jpg
+D:\Flow Videos\dataset\frame_2586.jpg
+0.4927
+0.4525
+0.4525
+D:\Flow Videos\dataset\frame_2446.jpg
+D:\Flow Videos\dataset\frame_2592.jpg
+D:\Flow Videos\dataset\frame_2586.jpg
+0.4927
+0.4525
