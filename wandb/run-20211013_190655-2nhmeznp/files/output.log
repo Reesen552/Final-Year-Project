@@ -1,0 +1,91 @@
+Epoch 1/20
+----------
+C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\torch\nn\functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+train loss: 0.173187
+validation loss: 0.122891
+Epoch 2/20
+----------
+train loss: 0.105780
+validation loss: 0.088515
+Epoch 3/20
+----------
+train loss: 0.087876
+validation loss: 0.066827
+Epoch 4/20
+----------
+train loss: 0.075104
+validation loss: 0.054033
+Epoch 5/20
+----------
+train loss: 0.068702
+validation loss: 0.047570
+Epoch 6/20
+----------
+train loss: 0.068144
+validation loss: 0.048160
+Epoch 7/20
+----------
+train loss: 0.062145
+validation loss: 0.042790
+Epoch 8/20
+----------
+train loss: 0.064776
+validation loss: 0.040988
+Epoch 9/20
+----------
+train loss: 0.058001
+validation loss: 0.038115
+Epoch 10/20
+----------
+train loss: 0.057318
+validation loss: 0.032423
+Epoch 11/20
+----------
+train loss: 0.053965
+validation loss: 0.030331
+Epoch 12/20
+----------
+train loss: 0.056639
+validation loss: 0.028931
+Epoch 13/20
+----------
+train loss: 0.052350
+validation loss: 0.028889
+Epoch 14/20
+----------
+train loss: 0.053131
+validation loss: 0.026308
+Epoch 15/20
+----------
+train loss: 0.051822
+validation loss: 0.029317
+Epoch 16/20
+----------
+train loss: 0.050804
+validation loss: 0.025587
+Epoch 17/20
+----------
+train loss: 0.050962
+validation loss: 0.027809
+Epoch 18/20
+----------
+train loss: 0.049965
+validation loss: 0.026577
+Epoch 19/20
+----------
+train loss: 0.049174
+validation loss: 0.030782
+Epoch 20/20
+----------
+train loss: 0.051870
+validation loss: 0.027964
+D:\Flow Videos\dataset\frame_44.jpg
+D:\Flow Videos\dataset\frame_721.jpg
+D:\Flow Videos\dataset\frame_1189.jpg
+D:\Flow Videos\dataset\frame_1032.jpg
+D:\Flow Videos\dataset\frame_514.jpg
+-0.0063
+0.346
+0.5926
+0.2941

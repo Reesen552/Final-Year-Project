@@ -1569,3 +1569,31 @@ FileNotFoundError: [WinError 2] The system cannot find the file specified
 2021-10-13 19:05:31,471 DEBUG   SenderThread:14652 [sender.py:send_request():196] send_request: stop_status
 2021-10-13 19:05:46,838 DEBUG   HandlerThread:14652 [handler.py:handle_request():126] handle_request: stop_status
 2021-10-13 19:05:46,838 DEBUG   SenderThread:14652 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:06:02,193 DEBUG   HandlerThread:14652 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 19:06:02,193 DEBUG   SenderThread:14652 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:06:17,549 DEBUG   HandlerThread:14652 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 19:06:17,549 DEBUG   SenderThread:14652 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:06:32,888 DEBUG   HandlerThread:14652 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 19:06:32,888 DEBUG   SenderThread:14652 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:06:48,245 DEBUG   HandlerThread:14652 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 19:06:48,245 DEBUG   SenderThread:14652 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:06:49,417 WARNING MainThread:14652 [internal.py:is_dead():364] Internal process exiting, parent pid 7392 disappeared
+2021-10-13 19:06:49,417 ERROR   MainThread:14652 [internal.py:wandb_internal():141] Internal process shutdown.
+2021-10-13 19:06:49,598 INFO    SenderThread:14652 [sender.py:finish():979] shutting down sender
+2021-10-13 19:06:49,598 INFO    SenderThread:14652 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-13 19:06:49,690 INFO    SenderThread:14652 [dir_watcher.py:finish():313] scan: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files
+2021-10-13 19:06:49,690 INFO    SenderThread:14652 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files\conda-environment.yaml conda-environment.yaml
+2021-10-13 19:06:49,691 INFO    SenderThread:14652 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files\config.yaml config.yaml
+2021-10-13 19:06:49,692 INFO    SenderThread:14652 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files\output.log output.log
+2021-10-13 19:06:49,692 INFO    SenderThread:14652 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files\requirements.txt requirements.txt
+2021-10-13 19:06:49,697 INFO    SenderThread:14652 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files\wandb-metadata.json wandb-metadata.json
+2021-10-13 19:06:49,700 INFO    SenderThread:14652 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files\wandb-summary.json wandb-summary.json
+2021-10-13 19:06:49,706 INFO    SenderThread:14652 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-13 19:06:49,707 INFO    SenderThread:14652 [file_pusher.py:join():182] waiting for file pusher
+2021-10-13 19:06:49,895 INFO    WriterThread:14652 [datastore.py:close():281] close: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\run-24k5t0ap.wandb
+2021-10-13 19:06:50,264 INFO    HandlerThread:14652 [handler.py:finish():683] shutting down handler
+2021-10-13 19:06:50,923 INFO    Thread-22 :14652 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files\output.log
+2021-10-13 19:06:50,942 INFO    Thread-23 :14652 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files\requirements.txt
+2021-10-13 19:06:50,950 INFO    Thread-24 :14652 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files\wandb-summary.json
+2021-10-13 19:06:51,004 INFO    Thread-21 :14652 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_181516-24k5t0ap\files\config.yaml
+2021-10-13 19:06:51,533 INFO    MainThread:14652 [internal.py:handle_exit():76] Internal process exited

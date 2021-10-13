@@ -1,0 +1,211 @@
+Epoch 1/50
+----------
+C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\torch\nn\functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  ..\c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+train loss: 0.153872
+validation loss: 0.082454
+Epoch 2/50
+----------
+train loss: 0.078769
+validation loss: 0.058811
+Epoch 3/50
+----------
+train loss: 0.065293
+validation loss: 0.048764
+Epoch 4/50
+----------
+train loss: 0.062251
+validation loss: 0.043084
+Epoch 5/50
+----------
+train loss: 0.059113
+validation loss: 0.039353
+Epoch 6/50
+----------
+train loss: 0.051659
+validation loss: 0.036279
+Epoch 7/50
+----------
+train loss: 0.049268
+validation loss: 0.040433
+Epoch 8/50
+----------
+train loss: 0.050919
+validation loss: 0.033953
+Epoch 9/50
+----------
+train loss: 0.050066
+validation loss: 0.035974
+Epoch 10/50
+----------
+train loss: 0.046819
+validation loss: 0.032745
+Epoch 11/50
+----------
+train loss: 0.046205
+validation loss: 0.028208
+Epoch 12/50
+----------
+train loss: 0.046725
+validation loss: 0.030184
+Epoch 13/50
+----------
+train loss: 0.042501
+validation loss: 0.028934
+Epoch 14/50
+----------
+train loss: 0.044610
+validation loss: 0.028524
+Epoch 15/50
+----------
+train loss: 0.044320
+validation loss: 0.025781
+Epoch 16/50
+----------
+train loss: 0.041177
+validation loss: 0.024986
+Epoch 17/50
+----------
+train loss: 0.040384
+validation loss: 0.027410
+Epoch 18/50
+----------
+train loss: 0.039472
+validation loss: 0.025256
+Epoch 19/50
+----------
+train loss: 0.038946
+validation loss: 0.023935
+Epoch 20/50
+----------
+train loss: 0.036055
+validation loss: 0.021546
+Epoch 21/50
+----------
+train loss: 0.037016
+validation loss: 0.020900
+Epoch 22/50
+----------
+train loss: 0.038587
+validation loss: 0.022743
+Epoch 23/50
+----------
+train loss: 0.037610
+validation loss: 0.021191
+Epoch 24/50
+----------
+train loss: 0.033980
+validation loss: 0.019593
+Epoch 25/50
+----------
+train loss: 0.035705
+validation loss: 0.020731
+Epoch 26/50
+----------
+train loss: 0.036574
+validation loss: 0.019216
+Epoch 27/50
+----------
+train loss: 0.035706
+validation loss: 0.021296
+Epoch 28/50
+----------
+train loss: 0.034932
+validation loss: 0.021297
+Epoch 29/50
+----------
+train loss: 0.034325
+validation loss: 0.021040
+Epoch 30/50
+----------
+train loss: 0.034161
+validation loss: 0.021289
+Epoch 31/50
+----------
+train loss: 0.034415
+validation loss: 0.019414
+Epoch 32/50
+----------
+train loss: 0.033795
+validation loss: 0.018913
+Epoch 33/50
+----------
+train loss: 0.033870
+validation loss: 0.022226
+Epoch 34/50
+----------
+train loss: 0.030602
+validation loss: 0.019758
+Epoch 35/50
+----------
+train loss: 0.031580
+validation loss: 0.018991
+Epoch 36/50
+----------
+train loss: 0.029286
+validation loss: 0.019483
+Epoch 37/50
+----------
+train loss: 0.031656
+validation loss: 0.018342
+Epoch 38/50
+----------
+train loss: 0.032086
+validation loss: 0.020892
+Epoch 39/50
+----------
+train loss: 0.028683
+validation loss: 0.020853
+Epoch 40/50
+----------
+train loss: 0.030188
+validation loss: 0.019193
+Epoch 41/50
+----------
+train loss: 0.031196
+validation loss: 0.018725
+Epoch 42/50
+----------
+train loss: 0.027926
+validation loss: 0.018816
+Epoch 43/50
+----------
+train loss: 0.029487
+validation loss: 0.019884
+Epoch 44/50
+----------
+train loss: 0.027645
+validation loss: 0.019851
+Epoch 45/50
+----------
+train loss: 0.030279
+validation loss: 0.024420
+Epoch 46/50
+----------
+train loss: 0.027478
+validation loss: 0.018072
+Epoch 47/50
+----------
+train loss: 0.029057
+validation loss: 0.019287
+Epoch 48/50
+----------
+train loss: 0.028533
+validation loss: 0.021234
+Epoch 49/50
+----------
+train loss: 0.029612
+validation loss: 0.017471
+Epoch 50/50
+----------
+train loss: 0.030440
+validation loss: 0.019508
+D:\Flow Videos\dataset\frame_265.jpg
+D:\Flow Videos\dataset\frame_1340.jpg
+D:\Flow Videos\dataset\frame_883.jpg
+D:\Flow Videos\dataset\frame_1251.jpg
+D:\Flow Videos\dataset\frame_408.jpg
+0.0858
+0.4954
+0.4118
+0.4525

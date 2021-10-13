@@ -1,0 +1,90 @@
+2021-10-13 19:49:29,194 INFO    MainThread:15680 [internal.py:wandb_internal():86] W&B internal server running at pid: 15680, started at: 2021-10-13 19:49:29.185757
+2021-10-13 19:49:29,196 INFO    WriterThread:15680 [datastore.py:open_for_write():77] open: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\run-1vjuuou0.wandb
+2021-10-13 19:49:29,197 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: check_version
+2021-10-13 19:49:29,200 DEBUG   SenderThread:15680 [sender.py:send():182] send: header
+2021-10-13 19:49:29,200 DEBUG   SenderThread:15680 [sender.py:send_request():196] send_request: check_version
+2021-10-13 19:49:29,340 DEBUG   SenderThread:15680 [sender.py:send():182] send: run
+2021-10-13 19:49:29,740 INFO    SenderThread:15680 [dir_watcher.py:__init__():169] watching files in: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files
+2021-10-13 19:49:29,740 INFO    SenderThread:15680 [sender.py:_start_run_threads():740] run started: 1vjuuou0 with start time 1634147368
+2021-10-13 19:49:29,740 DEBUG   SenderThread:15680 [sender.py:send():182] send: summary
+2021-10-13 19:49:29,740 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: run_start
+2021-10-13 19:49:29,742 INFO    SenderThread:15680 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-10-13 19:49:29,756 DEBUG   HandlerThread:15680 [meta.py:__init__():40] meta init
+2021-10-13 19:49:29,756 DEBUG   HandlerThread:15680 [meta.py:__init__():54] meta init done
+2021-10-13 19:49:29,757 DEBUG   HandlerThread:15680 [meta.py:probe():211] probe
+2021-10-13 19:49:29,771 DEBUG   HandlerThread:15680 [meta.py:_save_pip():58] save pip
+2021-10-13 19:49:29,772 DEBUG   HandlerThread:15680 [meta.py:_save_pip():72] save pip done
+2021-10-13 19:49:29,772 DEBUG   HandlerThread:15680 [meta.py:_save_conda():79] save conda
+2021-10-13 19:49:29,777 ERROR   HandlerThread:15680 [meta.py:_save_conda():86] Error saving conda packages
+Traceback (most recent call last):
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\site-packages\wandb\sdk\internal\meta.py", line 84, in _save_conda
+    subprocess.call(["conda", "env", "export"], stdout=f)
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\subprocess.py", line 349, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\reese\miniconda3\envs\final-year-project\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+2021-10-13 19:49:29,779 DEBUG   HandlerThread:15680 [meta.py:_save_conda():87] save conda done
+2021-10-13 19:49:29,779 DEBUG   HandlerThread:15680 [meta.py:probe():249] probe done
+2021-10-13 19:49:29,822 DEBUG   SenderThread:15680 [sender.py:send():182] send: files
+2021-10-13 19:49:29,822 INFO    SenderThread:15680 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-10-13 19:49:29,830 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 19:49:29,831 DEBUG   SenderThread:15680 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:49:29,840 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: pause
+2021-10-13 19:49:29,841 INFO    HandlerThread:15680 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-13 19:49:29,974 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: resume
+2021-10-13 19:49:29,974 INFO    HandlerThread:15680 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-13 19:49:29,974 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: pause
+2021-10-13 19:49:29,975 INFO    HandlerThread:15680 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-13 19:49:30,054 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: resume
+2021-10-13 19:49:30,054 INFO    HandlerThread:15680 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-13 19:49:30,055 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: pause
+2021-10-13 19:49:30,055 INFO    HandlerThread:15680 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-13 19:49:30,141 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: resume
+2021-10-13 19:49:30,141 INFO    HandlerThread:15680 [handler.py:handle_request_resume():558] starting system metrics thread
+2021-10-13 19:49:30,195 DEBUG   SenderThread:15680 [sender.py:send():182] send: stats
+2021-10-13 19:49:30,196 DEBUG   SenderThread:15680 [sender.py:send():182] send: stats
+2021-10-13 19:49:30,196 DEBUG   SenderThread:15680 [sender.py:send():182] send: stats
+2021-10-13 19:49:30,748 INFO    Thread-8  :15680 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\conda-environment.yaml
+2021-10-13 19:49:30,749 INFO    Thread-8  :15680 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\wandb-summary.json
+2021-10-13 19:49:30,749 INFO    Thread-8  :15680 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\wandb-metadata.json
+2021-10-13 19:49:30,750 INFO    Thread-8  :15680 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\requirements.txt
+2021-10-13 19:49:30,750 INFO    Thread-8  :15680 [dir_watcher.py:_on_file_created():217] file/dir created: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\output.log
+2021-10-13 19:49:30,934 INFO    Thread-11 :15680 [upload_job.py:push():137] Uploaded file C:\Users\reese\AppData\Local\Temp\tmp2qhutf36wandb\3gt6yz8e-wandb-metadata.json
+2021-10-13 19:49:32,762 INFO    Thread-8  :15680 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\output.log
+2021-10-13 19:49:34,335 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: pause
+2021-10-13 19:49:34,335 INFO    HandlerThread:15680 [handler.py:handle_request_pause():567] stopping system metrics thread
+2021-10-13 19:49:34,383 DEBUG   SenderThread:15680 [sender.py:send():182] send: stats
+2021-10-13 19:49:34,788 INFO    Thread-8  :15680 [dir_watcher.py:_on_file_modified():230] file/dir modified: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\output.log
+2021-10-13 19:49:45,211 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 19:49:45,211 DEBUG   SenderThread:15680 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:50:00,571 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 19:50:00,571 DEBUG   SenderThread:15680 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:50:15,941 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 19:50:15,941 DEBUG   SenderThread:15680 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:50:31,308 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 19:50:31,308 DEBUG   SenderThread:15680 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:50:46,668 DEBUG   HandlerThread:15680 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 19:50:46,668 DEBUG   SenderThread:15680 [sender.py:send_request():196] send_request: stop_status
+2021-10-13 19:50:50,782 WARNING MainThread:15680 [internal.py:is_dead():364] Internal process exiting, parent pid 7044 disappeared
+2021-10-13 19:50:50,782 ERROR   MainThread:15680 [internal.py:wandb_internal():141] Internal process shutdown.
+2021-10-13 19:50:50,897 INFO    WriterThread:15680 [datastore.py:close():281] close: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\run-1vjuuou0.wandb
+2021-10-13 19:50:51,040 INFO    SenderThread:15680 [sender.py:finish():979] shutting down sender
+2021-10-13 19:50:51,040 INFO    SenderThread:15680 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-13 19:50:51,297 INFO    SenderThread:15680 [dir_watcher.py:finish():313] scan: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files
+2021-10-13 19:50:51,297 INFO    SenderThread:15680 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\conda-environment.yaml conda-environment.yaml
+2021-10-13 19:50:51,297 INFO    SenderThread:15680 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\config.yaml config.yaml
+2021-10-13 19:50:51,298 INFO    SenderThread:15680 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\output.log output.log
+2021-10-13 19:50:51,298 INFO    SenderThread:15680 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\requirements.txt requirements.txt
+2021-10-13 19:50:51,304 INFO    SenderThread:15680 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\wandb-metadata.json wandb-metadata.json
+2021-10-13 19:50:51,305 INFO    SenderThread:15680 [dir_watcher.py:finish():327] scan save: c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\wandb-summary.json wandb-summary.json
+2021-10-13 19:50:51,309 INFO    SenderThread:15680 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-13 19:50:51,310 INFO    SenderThread:15680 [file_pusher.py:join():182] waiting for file pusher
+2021-10-13 19:50:51,727 INFO    HandlerThread:15680 [handler.py:finish():683] shutting down handler
+2021-10-13 19:50:52,390 INFO    Thread-16 :15680 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\output.log
+2021-10-13 19:50:52,392 INFO    Thread-17 :15680 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\requirements.txt
+2021-10-13 19:50:52,556 INFO    Thread-18 :15680 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\wandb-summary.json
+2021-10-13 19:50:52,558 INFO    Thread-15 :15680 [upload_job.py:push():137] Uploaded file c:\Users\reese\OneDrive\Documents\University\EEE4022S\Workspace\Final-Year-Project\wandb\run-20211013_194927-1vjuuou0\files\config.yaml
+2021-10-13 19:50:53,144 INFO    MainThread:15680 [internal.py:handle_exit():76] Internal process exited
